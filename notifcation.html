@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.notification_icon .fa-bell').click(() => {
+                $('.dropdown').toggleClass("active");
+            });
+        });
+    </script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #ffecec;
+    }
+
+    .notification_wrap {
+        width: 50%;
+        margin: 5% 25%;
+    }
+
+    .notification_wrap .notification_icon {
+        position: relative;
+        height: 50px;
+        /* background-color: #000; */
+        font-size: 40px;
+        text-align: center;
+        color: #ad9440;
+        justify-content: center;
+        display: flex;
+    }
+
+    .notification_wrap .notification_icon .fa-bell {
+        cursor: pointer;
+    }
+
+    .notification_wrap .dropdown {
+        width: 100%;
+        height: auto;
+        background-color: #800;
+        color: #ad9440;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
+        margin: 15px auto 0;
+        padding: 15px;
+        position: relative;
+        display: none;
+    }
+
+    .notification_wrap .dropdown.active {
+        display: block;
+    }
+
+    .notification_wrap .dropdown .notify-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 10px 10px;
+        border-bottom: 1px solid #ad9440;
+    }
+
+    .notification_wrap .dropdown .notify-item:last-child {
+        border-bottom: 0px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="notification_wrap">
+            <div class="notification_icon">
+                <ion-icon class="fa-bell" name="notifications-outline"></ion-icon>
+            </div>
+
+            <div class="dropdown">
+                <div class="notify-item">
+                    <div class="notify-info">
+                        <p>Some Notification here</p>
+                        <span class="notify_time">10 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notify-item">
+                    <div class="notify-info">
+                        <p>Some Notification here</p>
+                        <span class="notify_time">10 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notify-item">
+                    <div class="notify-info">
+                        <p>Some Notification here</p>
+                        <span class="notify_time">10 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notify-item">
+                    <div class="notify-info">
+                        <p>Some Notification here</p>
+                        <span class="notify_time">10 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notify-item">
+                    <div class="notify-info">
+                        <p>Some Notification here</p>
+                        <span class="notify_time">10 minutes ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
