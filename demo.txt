@@ -1,1 +1,5 @@
 testing github
+
+git init
+git add . 
+git commit -a -m "message here"
