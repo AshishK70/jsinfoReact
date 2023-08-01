@@ -3,3 +3,11 @@ testing github
 git init
 git add . 
 git commit -a -m "message here"
+
+now console will show a message with name of local branch name such as - 'origin'
+now we need to add a remote branch and remote branch means using a repo on github
+to do the above step create a new branch or select existing branch name 
+
+now pushing the data from local to github
+git push <local branch name>  <global/github branch name> shown in example below
+git push original master
