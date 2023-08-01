@@ -10,4 +10,7 @@ to do the above step create a new branch or select existing branch name
 
 now pushing the data from local to github
 git push <local branch name>  <global/github branch name> shown in example below
-git push original master
+git push origin master
+
+----------------------------------------
+now the file will be updated on github
